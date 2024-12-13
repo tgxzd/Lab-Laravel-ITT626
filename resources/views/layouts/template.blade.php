@@ -174,6 +174,12 @@
                   <p>Groups</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="{{ route('halls.index') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Halls</p>
+                </a>
+              </li>
 
             </ul>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

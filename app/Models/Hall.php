@@ -9,8 +9,8 @@ class Hall extends Model
     public $table = 'halls';
 
     protected $fillable = [
-        'lecturer_hall_name',
-        'lecturer_hall_place'
-
+        'lecture_hall_name',
+        'lecture_hall_place',
+        'capacity'
     ];
 }

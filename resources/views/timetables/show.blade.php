@@ -15,19 +15,25 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Day:</strong>
-                {{ $timetable->day->day_name }}
+                {{ $timetable->day ? $timetable->day->day_name : 'No Day Assigned' }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Subject:</strong>
-                {{ $timetable->subject->subject_name }}
+                <td>{{ $timetable->subject ? $timetable->subject->subject_code . ' - ' . $timetable->subject->subject_name : 'No Subject Assigned' }}</td>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Hall:</strong>
-                {{ $timetable->hall->lecture_hall_name }}
+                <td>{{ $timetable->hall ? $timetable->hall->lecture_hall_name : 'No Hall Assigned' }}</td>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Group:</strong>
+                <td><td>{{ $timetable->group ? $timetable->group->name : 'No Group Assigned' }}</td></td>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
